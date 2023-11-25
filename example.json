@@ -1,0 +1,742 @@
+{
+  "Leaf": 3,
+  "MaxQuestionId": 40,
+  "Contents": [
+    {
+      "name": "岗位基础信息",
+      "code": "basicInfo",
+      "children": [
+        {
+          "name": "企业介绍",
+          "code": "introduction",
+          "children": [
+            {
+              "name": "企业介绍",
+              "code": "introduction",
+              "questions": [
+                {
+                  "id": 1,
+                  "desc": "请问您能介绍下企业基本情况吗？",
+                  "isDefault": true,
+                  "parentCode": "introduction"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            },
+            {
+              "name": "企业官网",
+              "code": "companyWebsite",
+              "questions": [
+                {
+                  "id": 2,
+                  "desc": "请问您能介绍下企业官网网址吗？",
+                  "isDefault": true,
+                  "parentCode": "companyWebsite"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            },
+            {
+              "name": "企业性质",
+              "code": "companyNature",
+              "questions": [
+                {
+                  "id": 3,
+                  "desc": "请问您能介绍下企业性质吗？例如国企、民企、合资、外资等",
+                  "isDefault": true,
+                  "parentCode": "companyNature"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            },
+            {
+              "name": "所属行业",
+              "code": "industryCategory",
+              "questions": [
+                {
+                  "id": 4,
+                  "desc": "请问您能介绍下企业所属行业吗？",
+                  "isDefault": true,
+                  "parentCode": "industryCategory"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            },
+            {
+              "name": "核心服务",
+              "code": "coreServices",
+              "questions": [
+                {
+                  "id": 5,
+                  "desc": "请问您能介绍下企业核心服务或产品吗？",
+                  "isDefault": true,
+                  "parentCode": "coreServices"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            }
+          ],
+          "appendable": true,
+          "replace": false
+        },
+        {
+          "name": "工作内容",
+          "code": "jobContent",
+          "children": [
+            {
+              "name": "内部岗位名称",
+              "code": "jobTitle",
+              "questions": [
+                {
+                  "id": 6,
+                  "desc": "请问您能介绍下该岗位内部名称或者对标市场的名称吗？",
+                  "isDefault": true,
+                  "parentCode": "jobTitle"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            },
+            {
+              "name": "主要工作内容",
+              "code": "mainJobResponsibilities",
+              "questions": [
+                {
+                  "id": 7,
+                  "desc": "请问您能介绍下该岗位主要工作内容吗？",
+                  "isDefault": true,
+                  "parentCode": "mainJobResponsibilities"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            }
+          ],
+          "appendable": true,
+          "replace": false
+        },
+        {
+          "name": "任职要求",
+          "code": "requirement",
+          "children": [
+            {
+              "name": "学历要求",
+              "code": "educationalRequirements",
+              "questions": [
+                {
+                  "id": 8,
+                  "desc": "请问该岗位的最低学历要求？例如候选人有其他加分项，是否学历可以放宽？",
+                  "isDefault": true,
+                  "parentCode": "educationalRequirements"
+                }
+              ],
+              "appendable": true,
+              "replace": true
+            },
+            {
+              "name": "经验要求",
+              "code": "workExperienceRequirements",
+              "questions": [
+                {
+                  "id": 9,
+                  "desc": "请问该岗位的最低工作经验要求？",
+                  "isDefault": true,
+                  "parentCode": "workExperienceRequirements"
+                }
+              ],
+              "appendable": true,
+              "replace": true
+            },
+            {
+              "name": "硬技能",
+              "code": "hardSkills",
+              "questions": [
+                {
+                  "id": 10,
+                  "desc": "请问胜任该岗位需要的核心硬技能有哪些？例如专业知识、核心技术、管理能力等",
+                  "isDefault": true,
+                  "parentCode": "hardSkills"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            },
+            {
+              "name": "软技能",
+              "code": "softSkills",
+              "questions": [
+                {
+                  "id": 11,
+                  "desc": "请问胜任该岗位需要的重要软技能有哪些？例如个性特征、价值观、学习能力、沟通能力等，什么样的性格最适应公司的企业文化? ",
+                  "isDefault": true,
+                  "parentCode": "softSkills"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            },
+            {
+              "name": "加分项",
+              "code": "bonusItems",
+              "questions": [
+                {
+                  "id": 12,
+                  "desc": "请问该岗位候选人加分项有哪些？如有此加分项，哪些要求可以放宽？",
+                  "isDefault": true,
+                  "parentCode": "bonusItems"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            },
+            {
+              "name": "候选人偏好",
+              "code": "candidatePreferences",
+              "questions": [
+                {
+                  "id": 13,
+                  "desc": "请问该岗位直属领导对候选人偏好有哪些？例如工作风格、倾向的公司等？",
+                  "isDefault": true,
+                  "parentCode": "candidatePreferences"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            },
+            {
+              "name": "倾向来源",
+              "code": "sourceOfCandidates",
+              "questions": [
+                {
+                  "id": 14,
+                  "desc": "请问您欣赏同行业中的哪些公司的人才？原因？如跨行业人才，您倾向哪些行业或公司？",
+                  "isDefault": true,
+                  "parentCode": "sourceOfCandidates"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            },
+            {
+              "name": "其他补充",
+              "code": "otherRequirements",
+              "questions": [
+                {
+                  "id": 15,
+                  "desc": "请问该岗位其他补充要求？例如性别、经验等",
+                  "isDefault": true,
+                  "parentCode": "otherRequirements"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            }
+          ],
+          "appendable": true,
+          "replace": false
+        },
+        {
+          "name": "需求动因",
+          "code": "reasonForRequirement",
+          "children": [
+            {
+              "name": "需求动因",
+              "code": "reasonForRequirement",
+              "questions": [
+                {
+                  "id": 16,
+                  "desc": "请问该岗位的空缺原因？",
+                  "isDefault": true,
+                  "parentCode": "reasonForRequirement"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            }
+          ],
+          "appendable": true,
+          "replace": false
+        },
+        {
+          "name": "所属部门",
+          "code": "department",
+          "children": [
+            {
+              "name": "所属部门",
+              "code": "department",
+              "questions": [
+                {
+                  "id": 17,
+                  "desc": "请问该岗位所属部门？部门多少人？",
+                  "isDefault": true,
+                  "parentCode": "department"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            }
+          ],
+          "appendable": true,
+          "replace": false
+        },
+        {
+          "name": "汇报对象",
+          "code": "reportingManager",
+          "children": [
+            {
+              "name": "汇报对象",
+              "code": "reportingManager",
+              "questions": [
+                {
+                  "id": 18,
+                  "desc": "请问该岗位向谁汇报？汇报对象的大概背景情况（行业/公司等）及风格?",
+                  "isDefault": true,
+                  "parentCode": "reportingManager"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            }
+          ],
+          "appendable": true,
+          "replace": false
+        },
+        {
+          "name": "沟通关系",
+          "code": "communicationRelationships",
+          "children": [
+            {
+              "name": "沟通关系",
+              "code": "communicationRelationships",
+              "questions": [
+                {
+                  "id": 19,
+                  "desc": "请问该岗位上下游配合部门有哪些？（内部、外部）",
+                  "isDefault": true,
+                  "parentCode": "communicationRelationships"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            }
+          ],
+          "appendable": true,
+          "replace": false
+        },
+        {
+          "name": "岗位吸引点",
+          "code": "jobAttractionPoints",
+          "children": [
+            {
+              "name": "岗位吸引点",
+              "code": "jobAttractionPoints",
+              "questions": [
+                {
+                  "id": 20,
+                  "desc": "请问该岗位的吸引点有哪些？例如公司、部门、产品、管理者等",
+                  "isDefault": true,
+                  "parentCode": "jobAttractionPoints"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            }
+          ],
+          "appendable": true,
+          "replace": false
+        },
+        {
+          "name": "工作时间",
+          "code": "workingHours",
+          "children": [
+            {
+              "name": "工作时间",
+              "code": "workingHours",
+              "questions": [
+                {
+                  "id": 21,
+                  "desc": "请问该岗位的工作时间？是否加班，加班频率，加班是否倒休或支付加班费？",
+                  "isDefault": true,
+                  "parentCode": "workingHours"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            }
+          ],
+          "appendable": true,
+          "replace": false
+        },
+        {
+          "name": "工作地址",
+          "code": "workLocation",
+          "children": [
+            {
+              "name": "工作地址",
+              "code": "workLocation",
+              "questions": [
+                {
+                  "id": 22,
+                  "desc": "请问该岗位的办公地点？",
+                  "isDefault": true,
+                  "parentCode": "workLocation"
+                }
+              ],
+              "appendable": true,
+              "replace": true
+            }
+          ],
+          "appendable": true,
+          "replace": false
+        },
+        {
+          "name": "面试流程",
+          "code": "interviewProcess",
+          "children": [
+            {
+              "name": "面试轮次",
+              "code": "interviewRounds",
+              "questions": [
+                {
+                  "id": 23,
+                  "desc": "请问该岗位面试几轮？",
+                  "isDefault": true,
+                  "parentCode": "interviewRounds"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            },
+            {
+              "name": "面试官角色",
+              "code": "interviewerRoles",
+              "questions": [
+                {
+                  "id": 24,
+                  "desc": "请问该岗位的面试官有哪几位？分别是什么角色？",
+                  "isDefault": true,
+                  "parentCode": "interviewerRoles"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            },
+            {
+              "name": "面试决策人",
+              "code": "decisionMaker",
+              "questions": [
+                {
+                  "id": 25,
+                  "desc": "请问该岗位录用的最终决策人是谁？",
+                  "isDefault": true,
+                  "parentCode": "decisionMaker"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            },
+            {
+              "name": "期望到岗时间",
+              "code": "expectedJoiningDate",
+              "questions": [
+                {
+                  "id": 26,
+                  "desc": "请问该岗位的期望入职时间？",
+                  "isDefault": true,
+                  "parentCode": "expectedJoiningDate"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            }
+          ],
+          "appendable": true,
+          "replace": false
+        },
+        {
+          "name": "薪资结构及范围",
+          "code": "salaryStructure",
+          "children": [
+            {
+              "name": "薪酬结构",
+              "code": "compensationStructure",
+              "questions": [
+                {
+                  "id": 27,
+                  "desc": "请问该岗位税前月薪是多少？例如基础工资、绩效奖金、补贴部分的金额",
+                  "isDefault": true,
+                  "parentCode": "compensationStructure"
+                }
+              ],
+              "appendable": true,
+              "replace": true
+            },
+            {
+              "name": "年终奖",
+              "code": "yearEndBonus",
+              "questions": [
+                {
+                  "id": 28,
+                  "desc": "请问该岗位是否有13薪、年终奖？",
+                  "isDefault": true,
+                  "parentCode": "yearEndBonus"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            },
+            {
+              "name": "试用期",
+              "code": "probationPeriod",
+              "questions": [
+                {
+                  "id": 29,
+                  "desc": "请问该岗位试用期薪酬是否打折？",
+                  "isDefault": true,
+                  "parentCode": "probationPeriod"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            },
+            {
+              "name": "年收入",
+              "code": "annualIncome",
+              "questions": [
+                {
+                  "id": 30,
+                  "desc": "请问该岗位年总收入范围？",
+                  "isDefault": true,
+                  "parentCode": "annualIncome"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            }
+          ],
+          "appendable": true,
+          "replace": false
+        },
+        {
+          "name": "福利构成",
+          "code": "welfare",
+          "children": [
+            {
+              "name": "法定福利",
+              "code": "statutoryBenefits",
+              "questions": [
+                {
+                  "id": 31,
+                  "desc": "请问该岗位法定福利的情况？例如社保、公积金缴纳基数和比例",
+                  "isDefault": true,
+                  "parentCode": "statutoryBenefits"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            },
+            {
+              "name": "其他福利",
+              "code": "otherBenefits",
+              "questions": [
+                {
+                  "id": 32,
+                  "desc": "请问该岗位其他福利有哪些？例如节假日福利、补充医疗、其他福利",
+                  "isDefault": true,
+                  "parentCode": "otherBenefits"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            }
+          ],
+          "appendable": true,
+          "replace": false
+        },
+        {
+          "name": "用工形式",
+          "code": "employmentForm",
+          "children": [
+            {
+              "name": "用工形式",
+              "code": "employmentForm",
+              "questions": [
+                {
+                  "id": 33,
+                  "desc": "请问该岗位的用工形式？例如直签、外包、派遣、众包",
+                  "isDefault": true,
+                  "parentCode": "employmentForm"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            }
+          ],
+          "appendable": true,
+          "replace": false
+        },
+        {
+          "name": "合同期限",
+          "code": "contractDuration",
+          "children": [
+            {
+              "name": "合同期限",
+              "code": "contractDuration",
+              "questions": [
+                {
+                  "id": 34,
+                  "desc": "请问该岗位签订何种合同？合同期限是多久？试用期几个月？",
+                  "isDefault": true,
+                  "parentCode": "contractDuration"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            }
+          ],
+          "appendable": true,
+          "replace": false
+        },
+        {
+          "name": "外包用工",
+          "code": "outsource",
+          "children": [
+            {
+              "name": "外包原因",
+              "code": "outsourcingReasons",
+              "questions": [
+                {
+                  "id": 35,
+                  "desc": "请问该岗位选择外包的原因？例如编制、项目原因等",
+                  "isDefault": true,
+                  "parentCode": "outsourcingReasons"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            },
+            {
+              "name": "外包占比",
+              "code": "outsourcingPercentage",
+              "questions": [
+                {
+                  "id": 36,
+                  "desc": "请问该岗位团队中外包人员占比情况？",
+                  "isDefault": true,
+                  "parentCode": "outsourcingPercentage"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            },
+            {
+              "name": "岗位情况",
+              "code": "jobSituation",
+              "questions": [
+                {
+                  "id": 37,
+                  "desc": "请问该岗位的工作安排和定位？是否长期稳定？是否有转正机会和晋升空间？",
+                  "isDefault": true,
+                  "parentCode": "jobSituation"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            }
+          ],
+          "appendable": true,
+          "replace": false
+        }
+      ],
+      "appendable": true,
+      "replace": false
+    },
+    {
+      "name": "联系方式",
+      "code": "contact",
+      "children": [
+        {
+          "name": "联系方式",
+          "code": "contactInformation",
+          "children": [
+            {
+              "name": "联系方式",
+              "code": "contactInformation",
+              "questions": [
+                {
+                  "id": 38,
+                  "desc": "请问该客户对接人、职位、联系方式？",
+                  "isDefault": true,
+                  "parentCode": "contactInformation"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            }
+          ],
+          "appendable": true,
+          "replace": false
+        }
+      ],
+      "appendable": true,
+      "replace": false
+    },
+    {
+      "name": "客户面试问题",
+      "code": "interviewQuestion",
+      "children": [
+        {
+          "name": "初试",
+          "code": "initialInterview",
+          "children": [
+            {
+              "name": "初试",
+              "code": "initialInterview",
+              "questions": [
+                {
+                  "id": 39,
+                  "desc": "请问该岗位的初试问题有哪些？",
+                  "isDefault": true,
+                  "parentCode": "initialInterview"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            }
+          ],
+          "appendable": true,
+          "replace": false
+        },
+        {
+          "name": "复试",
+          "code": "followUpInterview",
+          "children": [
+            {
+              "name": "复试",
+              "code": "followUpInterview",
+              "questions": [
+                {
+                  "id": 40,
+                  "desc": "请问该岗位的复试问题有哪些？",
+                  "isDefault": true,
+                  "parentCode": "followUpInterview"
+                }
+              ],
+              "appendable": true,
+              "replace": false
+            }
+          ],
+          "appendable": true,
+          "replace": false
+        }
+      ],
+      "appendable": true,
+      "replace": false
+    }
+  ]
+}

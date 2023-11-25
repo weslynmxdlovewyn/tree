@@ -1,0 +1,1523 @@
+
+{
+  "type": "object",
+  "properties": {
+    "layout": {
+      "type": "void",
+      "x-component": "FormLayout",
+      "x-component-props": {
+        "colon": false,
+        "layout": "vertical"
+      },
+      "properties": {
+        "basicInfo": {
+          "type": "object",
+          "properties": {
+            "introduction": {
+              "type": "object",
+              "properties": {
+                "categoryTitle": {
+                  "type": "object",
+                  "x-component": "ThirdTitle",
+                  "x-component-props": {
+                    "width": "61px",
+                    "title": "企业介绍",
+                    "class": "title-introduction"
+                  }
+                },
+                "companyName": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Select",
+                      "x-component-props": {
+                        "disabled": true,
+                        "style": {
+                          "width": "360px",
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      }
+                    }
+                  }
+                },
+                "introduction": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "large-hight",
+                        "type": "textarea",
+                        "maxlength": 500,
+                        "show-word-limit": true,
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 500,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                },
+                "companyWebsite": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "input-border",
+                        "maxlength": 100,
+                        "show-word-limit": true,
+                        "size": "large",
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 100,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                },
+                "companyNature": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "input-border",
+                        "maxlength": 100,
+                        "show-word-limit": true,
+                        "size": "large",
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 100,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                },
+                "industryCategory": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "input-border",
+                        "maxlength": 100,
+                        "show-word-limit": true,
+                        "size": "large",
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 100,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                },
+                "coreServices": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "large-hight",
+                        "type": "textarea",
+                        "maxlength": 500,
+                        "show-word-limit": true,
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 500,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "jobContent": {
+              "type": "object",
+              "properties": {
+                "categoryTitle": {
+                  "type": "object",
+                  "x-component": "ThirdTitle",
+                  "x-component-props": {
+                    "title": "工作内容",
+                    "width": "61px",
+                    "marginTop": "28px"
+                  }
+                },
+                "jobTitle": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "required": true,
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "input-border",
+                        "maxlength": 100,
+                        "show-word-limit": true,
+                        "size": "large",
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 100,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                },
+                "mainJobResponsibilities": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "required": true,
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "large-hight",
+                        "type": "textarea",
+                        "maxlength": 500,
+                        "show-word-limit": true,
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 500,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "requirement": {
+              "type": "object",
+              "properties": {
+                "categoryTitle": {
+                  "type": "object",
+                  "x-component": "ThirdTitle",
+                  "x-component-props": {
+                    "title": "任职要求",
+                    "width": "61px",
+                    "marginTop": "28px"
+                  }
+                },
+                "educationalRequirements": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "SelectEducation",
+                      "x-component-props": {
+                        "style": {
+                          "width": "360px",
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "validator": "{{(value, rule)=> {if (!value) return rule.message; const educationObj = JSON.parse(value); if (!educationObj.edu) return rule.message; }}}",
+                        "message": "该字段是必填字段"
+                      }
+                    }
+                  }
+                },
+                "workExperienceRequirements": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "required": true,
+                      "x-decorator": "FormItem",
+                      "x-component": "Select",
+                      "x-component-props": {
+                        "class": "input-border",
+                        "placeholder": "请选择经验",
+                        "clearable": true,
+                        "style": {
+                          "width": "360px",
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-reactions": [
+                        "{{useAsyncDataSource(loadExperience)}}"
+                      ]
+                    }
+                  }
+                },
+                "hardSkills": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "small-hight",
+                        "type": "textarea",
+                        "maxlength": 2000,
+                        "show-word-limit": true,
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 2000,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                },
+                "softSkills": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "small-hight",
+                        "type": "textarea",
+                        "maxlength": 2000,
+                        "show-word-limit": true,
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 2000,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                },
+                "bonusItems": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "small-hight",
+                        "type": "textarea",
+                        "maxlength": 2000,
+                        "show-word-limit": true,
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 2000,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                },
+                "candidatePreferences": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "small-hight",
+                        "type": "textarea",
+                        "maxlength": 2000,
+                        "show-word-limit": true,
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 2000,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                },
+                "sourceOfCandidates": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "small-hight",
+                        "type": "textarea",
+                        "maxlength": 500,
+                        "show-word-limit": true,
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 500,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                },
+                "otherRequirements": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "small-hight",
+                        "type": "textarea",
+                        "maxlength": 2000,
+                        "show-word-limit": true,
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 2000,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "reasonForRequirement": {
+              "type": "object",
+              "properties": {
+                "categoryTitle": {
+                  "type": "object",
+                  "x-component": "ThirdTitle",
+                  "x-component-props": {
+                    "title": "需求动因",
+                    "width": "61px",
+                    "marginTop": "28px"
+                  }
+                },
+                "reasonForRequirement": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "small-hight",
+                        "type": "textarea",
+                        "maxlength": 500,
+                        "show-word-limit": true,
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 500,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "department": {
+              "type": "object",
+              "properties": {
+                "categoryTitle": {
+                  "type": "object",
+                  "x-component": "ThirdTitle",
+                  "x-component-props": {
+                    "title": "所属部门",
+                    "width": "61px",
+                    "marginTop": "28px"
+                  }
+                },
+                "department": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "input-border",
+                        "maxlength": 100,
+                        "show-word-limit": true,
+                        "size": "large",
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 100,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "reportingManager": {
+              "type": "object",
+              "properties": {
+                "categoryTitle": {
+                  "type": "object",
+                  "x-component": "ThirdTitle",
+                  "x-component-props": {
+                    "title": "汇报对象",
+                    "width": "61px",
+                    "marginTop": "28px"
+                  }
+                },
+                "reportingManager": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "input-border",
+                        "maxlength": 100,
+                        "show-word-limit": true,
+                        "size": "large",
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 100,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "communicationRelationships": {
+              "type": "object",
+              "properties": {
+                "categoryTitle": {
+                  "type": "object",
+                  "x-component": "ThirdTitle",
+                  "x-component-props": {
+                    "title": "沟通关系",
+                    "width": "61px",
+                    "marginTop": "28px"
+                  }
+                },
+                "communicationRelationships": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "small-hight",
+                        "type": "textarea",
+                        "maxlength": 500,
+                        "show-word-limit": true,
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 500,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "jobAttractionPoints": {
+              "type": "object",
+              "properties": {
+                "categoryTitle": {
+                  "type": "object",
+                  "x-component": "ThirdTitle",
+                  "x-component-props": {
+                    "title": "岗位吸引点",
+                    "width": "75px",
+                    "marginTop": "28px"
+                  }
+                },
+                "jobAttractionPoints": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "small-hight",
+                        "type": "textarea",
+                        "maxlength": 500,
+                        "show-word-limit": true,
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 500,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "workingHours": {
+              "type": "object",
+              "properties": {
+                "categoryTitle": {
+                  "type": "object",
+                  "x-component": "ThirdTitle",
+                  "x-component-props": {
+                    "title": "工作时间",
+                    "width": "61px",
+                    "marginTop": "28px"
+                  }
+                },
+                "workingHours": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "input-border",
+                        "maxlength": 100,
+                        "show-word-limit": true,
+                        "size": "large",
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 100,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "workLocation": {
+              "type": "object",
+              "properties": {
+                "categoryTitle": {
+                  "type": "object",
+                  "x-component": "ThirdTitle",
+                  "x-component-props": {
+                    "title": "工作地址",
+                    "width": "61px",
+                    "marginTop": "28px"
+                  }
+                },
+                "workLocation": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "SelectAddress",
+                      "x-component-props": {
+                        "class": "input-border",
+                        "style": {
+                          "width": "360px",
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "validator": "{{(value, rule)=> {if (!value) return rule.message; const addressObj = JSON.parse(value); if (!addressObj.workplaceCode && !addressObj.workplaceName) return rule.message; }}}",
+                        "message": "该字段是必填字段"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "interviewProcess": {
+              "type": "object",
+              "properties": {
+                "categoryTitle": {
+                  "type": "object",
+                  "x-component": "ThirdTitle",
+                  "x-component-props": {
+                    "title": "面试流程",
+                    "width": "61px",
+                    "marginTop": "28px"
+                  }
+                },
+                "interviewRounds": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "input-border",
+                        "maxlength": 100,
+                        "show-word-limit": true,
+                        "size": "large",
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 100,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                },
+                "interviewerRoles": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "input-border",
+                        "maxlength": 100,
+                        "show-word-limit": true,
+                        "size": "large",
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 100,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                },
+                "decisionMaker": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "input-border",
+                        "maxlength": 100,
+                        "show-word-limit": true,
+                        "size": "large",
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 100,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                },
+                "expectedJoiningDate": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "input-border",
+                        "maxlength": 100,
+                        "show-word-limit": true,
+                        "size": "large",
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 100,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "salaryStructure": {
+              "type": "object",
+              "properties": {
+                "categoryTitle": {
+                  "type": "object",
+                  "x-component": "ThirdTitle",
+                  "x-component-props": {
+                    "title": "薪资结构及范围",
+                    "width": "105px",
+                    "marginTop": "28px"
+                  }
+                },
+                "compensationStructure": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "SelectSalary",
+                      "x-component-props": {
+                        "class": "input-border",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "validator": "{{(value, rule)=> {if (!value) return rule.message; const salaryObj = JSON.parse(value); if (!salaryObj.salaryFrom || !salaryObj.salaryTo || !salaryObj.rate) return rule.message; }}}",
+                        "message": "该字段是必填字段"
+                      }
+                    }
+                  }
+                },
+                "yearEndBonus": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "input-border",
+                        "maxlength": 500,
+                        "show-word-limit": true,
+                        "size": "large",
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 500,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                },
+                "probationPeriod": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "input-border",
+                        "maxlength": 500,
+                        "show-word-limit": true,
+                        "size": "large",
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 500,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                },
+                "annualIncome": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "input-border",
+                        "maxlength": 500,
+                        "show-word-limit": true,
+                        "size": "large",
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 500,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "welfare": {
+              "type": "object",
+              "properties": {
+                "categoryTitle": {
+                  "type": "object",
+                  "x-component": "ThirdTitle",
+                  "x-component-props": {
+                    "title": "福利构成",
+                    "width": "61px",
+                    "marginTop": "28px"
+                  }
+                },
+                "statutoryBenefits": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "input-border",
+                        "maxlength": 2000,
+                        "show-word-limit": true,
+                        "size": "large",
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 2000,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                },
+                "otherBenefits": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "input-border",
+                        "maxlength": 2000,
+                        "show-word-limit": true,
+                        "size": "large",
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 2000,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "employmentForm": {
+              "type": "object",
+              "properties": {
+                "categoryTitle": {
+                  "type": "object",
+                  "x-component": "ThirdTitle",
+                  "x-component-props": {
+                    "title": "用工形式",
+                    "width": "61px",
+                    "marginTop": "28px"
+                  }
+                },
+                "employmentForm": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "input-border",
+                        "maxlength": 2000,
+                        "show-word-limit": true,
+                        "size": "large",
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 2000,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "contractDuration": {
+              "type": "object",
+              "properties": {
+                "categoryTitle": {
+                  "type": "object",
+                  "x-component": "ThirdTitle",
+                  "x-component-props": {
+                    "title": "合同期限",
+                    "width": "61px",
+                    "marginTop": "28px"
+                  }
+                },
+                "contractDuration": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "input-border",
+                        "maxlength": 2000,
+                        "show-word-limit": true,
+                        "size": "large",
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 2000,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "outsource": {
+              "type": "object",
+              "properties": {
+                "categoryTitle": {
+                  "type": "object",
+                  "x-component": "ThirdTitle",
+                  "x-component-props": {
+                    "title": "外包用工",
+                    "width": "61px",
+                    "marginTop": "32px"
+                  }
+                },
+                "outsourcingReasons": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "small-hight",
+                        "type": "textarea",
+                        "maxlength": 500,
+                        "show-word-limit": true,
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 500,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                },
+                "outsourcingPercentage": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "small-hight",
+                        "type": "textarea",
+                        "maxlength": 500,
+                        "show-word-limit": true,
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 500,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                },
+                "jobSituation": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "small-hight",
+                        "type": "textarea",
+                        "maxlength": 500,
+                        "show-word-limit": true,
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 500,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "contact": {
+          "type": "object",
+          "properties": {
+            "contactTitle": {
+              "type": "void",
+              "x-component": "BorderSubTitle",
+              "x-component-props": {
+                "title": "客户联系方式",
+                "class": "title-contact"
+              }
+            },
+            "contactInformation": {
+              "type": "object",
+              "properties": {
+                "contactInformation": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "small-hight",
+                        "type": "textarea",
+                        "maxlength": 500,
+                        "show-word-limit": true,
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 500,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "interviewQuestion": {
+          "type": "object",
+          "properties": {
+            "interviewCustomerTitle": {
+              "type": "void",
+              "x-component": "BorderSubTitle",
+              "x-component-props": {
+                "title": "客户面试问题",
+                "class": "title-interview-question"
+              }
+            },
+            "initialInterview": {
+              "type": "object",
+              "properties": {
+                "categoryTitle": {
+                  "type": "object",
+                  "x-component": "ThirdTitle",
+                  "x-component-props": {
+                    "width": "31px",
+                    "title": "初试",
+                    "marginTop": "24px"
+                  }
+                },
+                "initialInterview": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "small-hight",
+                        "type": "textarea",
+                        "maxlength": 2000,
+                        "show-word-limit": true,
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 2000,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "followUpInterview": {
+              "type": "object",
+              "properties": {
+                "categoryTitle": {
+                  "type": "object",
+                  "x-component": "ThirdTitle",
+                  "x-component-props": {
+                    "width": "31px",
+                    "title": "复试",
+                    "marginTop": "28px"
+                  }
+                },
+                "followUpInterview": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "small-hight",
+                        "type": "textarea",
+                        "maxlength": 2000,
+                        "show-word-limit": true,
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 2000,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "otherInfo": {
+          "type": "object",
+          "properties": {
+            "otherTitle": {
+              "type": "void",
+              "x-component": "BorderSubTitle",
+              "x-component-props": {
+                "title": "其他",
+                "class": "title-other-info"
+              }
+            },
+            "remark": {
+              "type": "object",
+              "properties": {
+                "remark": {
+                  "type": "object",
+                  "properties": {
+                    "customTitle": {
+                      "type": "object",
+                      "x-component": "CustomTitle"
+                    },
+                    "text": {
+                      "type": "string",
+                      "x-decorator": "FormItem",
+                      "x-component": "Input",
+                      "x-component-props": {
+                        "class": "small-hight",
+                        "type": "textarea",
+                        "maxlength": 2000,
+                        "show-word-limit": true,
+                        "placeholder": "请输入",
+                        "style": {
+                          "marginTop": "6px",
+                          "marginBottom": "4px"
+                        }
+                      },
+                      "x-validator": {
+                        "max": 2000,
+                        "message": "该字段超过字数限制"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
