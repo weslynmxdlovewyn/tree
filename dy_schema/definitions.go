@@ -57,6 +57,14 @@ func (qs *QuestionsDySchema[T]) GetLeafs() []*LeafInfo {
 	return ctx.LeafCategories
 }
 
+func (qs *QuestionsDySchema[T]) WalkQuestions(walkFunc func(paths []*Category[T], question *T, appendable bool)) {
+	ctx := &walkCtx[T]{
+		pathStack: &utils.Stack[*Category[T]]{},
+		walkFunc:  walkFunc,
+	}
+	qs.walk(qs.Contents, ctx)
+}
+
 func (qs *QuestionsDySchema[T]) walk(contents []*Category[T], ctx *walkCtx[T]) {
 	for _, cate := range contents {
 		// 入栈
